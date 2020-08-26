@@ -54,12 +54,10 @@ export default class Game {
 
     update(deltaTime){
         this.gameObjects.forEach(gameObject => gameObject.update(deltaTime, this.particles));
-        console.log(this.getRandomColor())
     };
 
     draw(ctx){
         this.gameObjects.forEach(gameObject => gameObject.draw(ctx));
-        
     };
     
 }
